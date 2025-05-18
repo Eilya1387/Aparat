@@ -1,0 +1,10 @@
+@font-face {
+  font-family: iran;
+  src: url('./fonts/A-Iranian-Sans/IranianSans.ttf');
+}
+
+body{
+    font-family: iran;
+    background-color: #16171a;
+ 
+}
