@@ -3,7 +3,6 @@
   height: 87vh;
   max-width: 100%;
   transition: 0.3s ease-in-out;
-
 }
 
 .menu-container {
@@ -81,14 +80,13 @@
   z-index: 10;
 }
 
-
 .child-v {
   transition: 0.3s ease-in-out;
 }
 .al-mas {
   display: flex;
 }
-.video-bar{
+.video-bar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

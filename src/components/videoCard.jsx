@@ -8,15 +8,15 @@ const VideoCard = ({ poster, title }) => {
           <span>10:22</span>
         </div>
         <div className="info">
-        <h2>{title}</h2>
-        <div className="chanal-name">
-          <img src={poster} alt="" />
-          <h3>Eilya Master</h3>
-        </div>
-        <div className="time-view">
-          <span>10 هزار بازدید.   </span>
-          <span>5 روز پیش</span>
-        </div>
+          <h2>{title}</h2>
+          <div className="chanal-name">
+            <img src={poster} alt="" />
+            <h3>Eilya Master</h3>
+          </div>
+          <div className="time-view">
+            <span>10 هزار بازدید. </span>
+            <span>5 روز پیش</span>
+          </div>
         </div>
       </div>
     </>
