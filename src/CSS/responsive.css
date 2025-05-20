@@ -1,24 +1,220 @@
-/* گوشی‌های کوچک */
-@media (max-width: 480px) {
-  /* استایل‌ها برای گوشی خیلی کوچک */
+
+@media (max-width: 481px) {
+
+.video-card{
+  width: 100% !important;
+  height: 380px !important;
+}
+.side{
+  display: none;
+}
+.child-v{
+  width: 100% !important;
+}
+.bi-list{
+  display: none;
+}
+.child3{
+  display: none;
+}
+.in-search {
+    display: none;
+}
+.child2 {
+    width: 15vh;
+ }
+ .search {
+    width: 33%;
+    padding: 4px;
+ }
+ .bi-search {
+  padding-left: 0;
+ }
+ .thumbnail-load{
+  height: 200px !important;
+ }
+   .skeleton-wrapper {
+    max-width: 440px !important;
+  }
 }
 
-/* گوشی‌های معمولی */
-@media (max-width: 768px) {
-  /* استایل‌ها برای موبایل */
+
+
+@media  (min-width: 600px) and (max-width: 768px) {
+    .video-card {
+  width: 50% !important;
+}
+.part2 button {
+  min-width: 80% !important;
+  width: 20% !important;
+font-size: 70% !important;
+flex-direction: column !important;
+height: auto !important;
+}
+.thumbnail span {
+
+  left: -73% !important;
+}
+.child2{
+  width: 45vh !important;
+}
+ .darkmd{
+  display: none;
+ }
 }
 
-/* تبلت */
+
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* استایل‌ها برای تبلت */
+
+  .video-card {
+  width: 30% !important;
+}
+.thumbnail span {
+
+  left: -75% !important;
+
+
+}
+.thumbnail img {
+
+  height: 90% !important;
+
+}
+.part2 button {
+
+  width: 90% !important;
+font-size: 80% !important;
+}
+ .thumbnail-load{
+  height: 130px !important;
+ }
+ .darkmd{
+  display: none;
+ }
 }
 
 /* لپ‌تاپ */
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* استایل‌ها برای لپ‌تاپ */
+  .video-card {
+  width: 30% !important;
+}
+.part2 button {
+
+  width: 90% !important;
+font-size: 90% !important;
+}
 }
 
-/* دسکتاپ */
-@media (min-width: 1281px) {
-  /* استایل‌ها برای دسکتاپ بزرگ */
+/* special breack point */
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+      .video-card {
+  width: 50% !important;
+}
+.side{
+  display: none;
+}
+.child-v{
+  width: 100% !important;
+}
+.bi-list{
+  display: none;
+}
+.child3{
+  display: none;
+}
+}
+.skeleton-container {
+  width: 95%;           
+  max-width: 400px;      
+}
+
+.thumbnail-load {
+  width: 100% !important; 
+}
+
+.skeleton-wrapper {
+  width: 100%;
+  max-width: 300px;
+}
+@media  (min-width: 600px) and (max-width: 761px) {
+.dis-login{
+  display: none !important;
+}
+.part1 ul,
+.part4 ul,
+.part5 ul {
+  width: 100%;
+  height: 140%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+.part1 ul li,
+.part4 ul li,
+.part5 ul li {
+  cursor: pointer;
+  width: 90%;
+  border-radius: 10px;
+  height: 34%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+justify-content: center;
+}
+.part1 ul li a i,
+.part4 ul li a i,
+.part5 ul li a i {
+  font-size: x-large;
+}
+.part1 a,
+.part4 a,
+.part5 a  {
+  display: flex;
+  flex-direction: column;
+}
+.part1 a span,
+.part4 a span,
+.part5 a span{
+font-size: 11px;
+}
+.part1 ul li:hover {
+  background-color: rgba(128, 128, 128, 0.258);
+}
+.side-master .part4 {
+  min-height: unset !important;
+  min-height: 500px !important;
+  font-size: small !important;
+}
+.side-master .part3 span,
+.side-master .part4 span,
+.side-master .part5 span{
+
+  font-size: 11px !important;
+}
+
+.part4 ul li, .part5 ul li {
+
+    justify-content: space-evenly !important;
+}
+.side-master .part5 {
+  min-height: unset !important;
+  min-height: 500px !important;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .skeleton-wrapper {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skeleton-wrapper {
+    max-width: 500px;
+  }
 }

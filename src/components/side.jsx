@@ -1,4 +1,5 @@
 import "../CSS/side.css";
+import "../CSS/responsive.css"
 import { useState } from "react";
 const Side = ({isSideOpen}) => {
   const [isToggled, setIsToggled] = useState(false);
@@ -36,7 +37,7 @@ const Side = ({isSideOpen}) => {
             <span>برای شما</span>
             <div className="line"></div>
           </div>
-          <span>
+          <span className="dis-login">
             برای دنبال‌کردن کانال‌ها، مشاهده ویدیوهای پیشنهادی مطابق با سلیقه
             شما و تجربه‌کاربری بهتر، وارد شوید.
           </span>
@@ -52,7 +53,7 @@ const Side = ({isSideOpen}) => {
           <label htmlFor="">
             <span>
               <i className="bi bi-moon"></i>
-              <span>حالت شب</span>
+              <span className="darkmd">حالت شب</span>
             </span>
             <button
               id="theme-toggle"

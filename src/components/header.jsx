@@ -1,6 +1,6 @@
 import "../CSS/header.css";
 import aparatLG from "../images/aparat-icon.webp";
-
+import "../CSS/responsive.css"
 const Header = ({ toggleSide }) => {
   return (
     <header>

@@ -1,4 +1,5 @@
 import "../CSS/videoCard.css";
+import "../CSS/responsive.css";
 const VideoCard = ({ poster, title }) => {
   return (
     <>

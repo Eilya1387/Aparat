@@ -4,6 +4,7 @@ import Side from "../components/side";
 import TopMenu from "./topmenu";
 import VideoCard from "./videoCard";
 import VideoCardSkeleton from "./Loading";
+import "../CSS/responsive.css"
 import axios from "axios";
 const Main = ({ isSideOpen }) => {
   const [videos, setVideos] = useState([]);
@@ -21,7 +22,7 @@ const Main = ({ isSideOpen }) => {
           console.log(videoList);
           setVideos(videoList);
           setLoading(false);
-        }, 3000);
+        }, 1000);
       } catch (error) {
         console.error("خطا در دریافت ویدیوها:", error);
         setLoading(false);

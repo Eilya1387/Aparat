@@ -1,15 +1,18 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-
+import "../CSS/responsive.css"
 const VideoCardSkeleton = () => {
   return (
     <div className="video-card">
-      <Skeleton
-        width={300}
-        height={150}
-        baseColor="#202020"
-        highlightColor="#444"
-      />
+          
+<div className="skeleton-container">
+  <Skeleton
+    height={150}
+    baseColor="#202020"
+    highlightColor="#444"
+    className="thumbnail-load"
+  />
+</div>
 
       <div className="info">
         <Skeleton

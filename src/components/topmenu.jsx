@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "../CSS/main.css";
-
+import "../CSS/responsive.css"
 const categories = [
   { name: "برای شما", icon: "bi-person" },
   { name: "پخش زنده", icon: "bi-record-circle" },
