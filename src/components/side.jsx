@@ -1,6 +1,6 @@
 import "../CSS/side.css";
 import { useState } from "react";
-const Side = () => {
+const Side = ({isSideOpen}) => {
   const [isToggled, setIsToggled] = useState(false);
 
   const handleClick = () => {
@@ -8,8 +8,8 @@ const Side = () => {
   };
   return (
     <>
-      <div className="side-master">
-        <div className="part1">
+      <div className="side-master"style={{overflow: !isSideOpen ? "auto" : "hidden"}}>
+        <div className={!isSideOpen ? "part1" : "closed"}>
           <ul>
             <li>
               <a href="">
@@ -31,7 +31,7 @@ const Side = () => {
             </li>
           </ul>
         </div>
-        <div className="part2">
+        <div className="part2" style={{visibility: !isSideOpen ? "visible" : "hidden"}}>
           <div className="div-line">
             <span>برای شما</span>
             <div className="line"></div>
@@ -44,7 +44,7 @@ const Side = () => {
             <i className="bi bi-person"></i>ورود به آپارات
           </button>
         </div>
-        <div className="part3">
+        <div className="part3" style={{visibility: !isSideOpen ? "visible" : "hidden"}}>
           <div className="div-line">
             <span>تنظیمات</span>
             <div className="line"></div>
@@ -63,7 +63,7 @@ const Side = () => {
             </button>
           </label>
         </div>
-        <div className="part4">
+        <div className="part4" style={{visibility: !isSideOpen ? "visible" : "hidden"}}>
           <div className="div-line">
             <span>سرویس ها</span>
             <div className="line"></div>
@@ -113,7 +113,7 @@ const Side = () => {
             </li>
           </ul>
         </div>
-        <div className="part5">
+        <div className="part5" style={{visibility: !isSideOpen ? "visible" : "hidden"}}>
           <div className="div-line">
             <span>بیشتر</span>
             <div className="line"></div>
@@ -169,7 +169,7 @@ const Side = () => {
             </li>
           </ul>
         </div>
-        <div className="part6">
+        <div className="part6" style={{visibility: !isSideOpen ? "visible" : "hidden"}}>
           <a href="">
             <i className="bi bi-linkedin"></i>
           </a>

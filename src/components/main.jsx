@@ -33,7 +33,7 @@ const Main = ({ isSideOpen }) => {
     <>
       <div className="al-mas">
         <div className="side" style={{ width: isSideOpen ? "5%" : "15%" }}>
-          <Side />
+          <Side isSideOpen={isSideOpen}/>
         </div>
 
         <div className="child-v" style={{ width: isSideOpen ? "95%" : "85%" }}>
