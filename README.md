@@ -6,7 +6,7 @@ This project is built using **React** and aims to recreate and improve the user 
 
 - ⚛️ React
 - 📦 Axios
-- 🎨 Bootstrap Icons
+- 🎨 Skeleton Loading
 - 🌐 Hosted on Vercel
 
 ## 🚀 Live Demo
