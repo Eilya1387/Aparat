@@ -13,16 +13,18 @@ const Main = ({ isSideOpen }) => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get(
-          "https://moviesapi.ir/api/v1/movies?page=1"
-        );
-        setTimeout(() => {
-          const videoList = response.data.data.slice(0, 8);
+      const [response1, response2] = await Promise.all([
+        axios.get("https://moviesapi.ir/api/v1/movies?page=1"),
+        axios.get("https://moviesapi.ir/api/v1/movies?page=2")
+      ]);
+      setTimeout(() => {
+        const videoList1 = response1.data.data.slice(0, 10);
+        const videoList2 = response2.data.data.slice(0, 10);
 
-          console.log(videoList);
-          setVideos(videoList);
-          setLoading(false);
-        }, 1000);
+        const allVideos = [...videoList1, ...videoList2];
+        setVideos(allVideos);
+        setLoading(false);
+      }, 3000);
       } catch (error) {
         console.error("خطا در دریافت ویدیوها:", error);
         setLoading(false);
@@ -43,7 +45,7 @@ const Main = ({ isSideOpen }) => {
           </div>
           <div className="video-bar">
             {loading
-              ? [...Array(8)].map((_, index) => (
+              ? [...Array(20)].map((_, index) => (
                   <VideoCardSkeleton key={index} />
                 ))
               : videos.map((video) => (

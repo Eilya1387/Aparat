@@ -3,6 +3,10 @@
   height: 87vh;
   max-width: 100%;
   transition: 0.3s ease-in-out;
+    position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+
 }
 
 .menu-container {
@@ -17,6 +21,8 @@
   margin: 0;
   list-style-type: none;
   scroll-behavior: smooth;
+  align-items: center;
+  height: 5vh;
 }
 
 .menu-item {
@@ -78,6 +84,10 @@
   width: 100%;
   position: relative;
   z-index: 10;
+    position: sticky;
+  top: 70px;
+  z-index: 999;
+  background-color: #16171a; 
 }
 
 .child-v {

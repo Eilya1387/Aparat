@@ -33,6 +33,7 @@ const Header = ({ toggleSide }) => {
         </button>
       </div>
     </header>
+    
   );
 };
 
