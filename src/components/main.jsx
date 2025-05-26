@@ -14,8 +14,8 @@ const Main = ({ isSideOpen }) => {
     const fetchVideos = async () => {
       try {
       const [response1, response2] = await Promise.all([
-        axios.get("https://moviesapi.ir/api/v1/movies?page=1"),
-        axios.get("https://moviesapi.ir/api/v1/movies?page=2")
+        axios.get("http://moviesapi.ir/api/v1/movies?page=1"),
+        axios.get("http://moviesapi.ir/api/v1/movies?page=2")
       ]);
       setTimeout(() => {
         const videoList1 = response1.data.data.slice(0, 10);
