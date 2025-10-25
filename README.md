@@ -11,4 +11,4 @@ This project is built using **React** and aims to recreate and improve the user 
 
 ## 🚀 Live Demo
 
-[![View Live](https://img.shields.io/badge/Live%20Demo-%F0%9F%9A%80-blue?style=for-the-badge)](https://aparat-phi.vercel.app/)
+[![View Live](https://img.shields.io/badge/Live%20Demo-%F0%9F%9A%80-blue?style=for-the-badge)](https://my-aparat.netlify.app)
