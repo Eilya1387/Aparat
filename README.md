@@ -7,7 +7,7 @@ This project is built using **React** and aims to recreate and improve the user 
 - ⚛️ React
 - 📦 Axios
 - 🎨 Skeleton Loading
-- 🌐 Hosted on Vercel
+- 🌐 Hosted on Netlify
 
 ## 🚀 Live Demo
 
